@@ -5,7 +5,7 @@ import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import Hero from "../Components/Hero";
 import Info from "../Components/Info";
-import SubHero from "../Components/subHero";
+import SubHero from "../Components/SubHero";
 
 export default function Home() {
   const [mobileMenu, setMobileMenu] = useState(true);
