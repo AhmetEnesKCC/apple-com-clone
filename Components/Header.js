@@ -11,11 +11,11 @@ function Header() {
 
   return (
     <div
-      className={`header overflow-hidden bg-[rgba(0,0,0,0.8)]  ${
+      className={`header overflow-hidden   ${
         mobileMenu && "h-screen  bg-[rgba(0,0,0,1)]"
-      } transition-all md:h-12  duration-300 ease-in`}
+      } md:bg-[rgba(0,0,0,0.8)] transition-all md:h-12  duration-300 ease-in`}
     >
-      <div className={`header-item-container hidden md:flex `}>
+      <div className={`header-item-container hidden lg:flex `}>
         <IoLogoApple className="header-icon" />
         <p>Store</p>
         <p>Mac</p>
@@ -28,9 +28,9 @@ function Header() {
         <IoIosSearch className="header-icon" />
         <BsBag className="header-icon" />
       </div>
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <div
-          className={`flex justify-between px-5 md:hidden  text-gray-200 ${
+          className={`flex justify-between px-5 lg:hidden  text-gray-200 ${
             searchMode && "hidden"
           }`}
         >
